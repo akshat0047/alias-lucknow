@@ -20,7 +20,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -53,7 +53,7 @@ $(document).ready(function()
 	initClientsSlider();
 	initParallax();
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -65,22 +65,22 @@ $(document).ready(function()
 		{
 			if($(window).scrollTop() > 100)
 			{
-				header.css({'height':"80"});
+				header.css({'height':"80",'box-shadow':"0px 0px 4px 4px rgba(0,0,0,0.3)"});
 			}
 			else
 			{
-				header.css({'height':"110"});
+				header.css({'height':"110",'box-shadow':"0px 0px 0px 0px "});
 			}
 		}
 		else
 		{
 			if($(window).scrollTop() > 100)
 			{
-				header.css({'height':"80"});
+				header.css({'height':"90",'box-shadow':"0px 0px 4px 4px rgba(0,0,0,0.3)"});
 			}
 			else
 			{
-				header.css({'height':"110"});
+				header.css({'height':"110",'box-shadow':"0px 0px 0px 0px "});
 			}
 		}
 		if(window.innerWidth > 991 && menuActive)
@@ -89,7 +89,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Init Menu
 
@@ -133,7 +133,7 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
+	/*
 
 	4. Init Main Slider
 
@@ -171,7 +171,7 @@ $(document).ready(function()
 			{
 				$('.main_slider_custom_dot').removeClass('active');
 				$('.main_slider_custom_dots li').eq(event.page.index).addClass('active');
-			});	
+			});
 
 			/* Custom navigation */
 			if($('.main_slider_nav').length)
@@ -190,7 +190,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	5. Init Progress Bars
 
@@ -215,7 +215,7 @@ $(document).ready(function()
 		    	})
 		    	.on('start', function()
 		    	{
-		    		var pbar = new ProgressBar.Line(eleName, 
+		    		var pbar = new ProgressBar.Line(eleName,
 		    		{
 		    			strokeWidth: 0.5,
 						easing: 'easeInOut',
@@ -251,7 +251,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	6. Init Testimonials Slider
 
@@ -288,7 +288,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	7. Init Clients Slider
 
@@ -311,13 +311,13 @@ $(document).ready(function()
 					768:{items:3},
 					992:{items:4},
 					1199:{items:5}
-					
+
 				}
 			});
 		}
 	}
 
-	/* 
+	/*
 
 	8. Init Parallax
 
@@ -361,3 +361,6 @@ $(document).ready(function()
 		}
 	}
 });
+	function project_button(){
+		$(".projects").toggle();
+	}
