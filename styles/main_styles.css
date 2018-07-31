@@ -326,12 +326,55 @@ section
 .logo_container
 {
 	flex-basis: 50%;
+	overflow: hidden;
 }
 .logo
 {
 
 	margin-left: 7px;
 }
+
+@media (min-width:250px) and (max-width:400px)
+{
+.logo-image{
+	position: relative;
+	width:100%;
+	height:auto;
+}
+}
+@media (min-width:401px) and (max-width:660px)
+{
+.logo-image{
+	position: relative;
+	width:80%;
+	height:auto;
+}
+}
+@media (min-width:660px) and (max-width:1000px)
+{
+.logo-image{
+	position: relative;
+	width:50%;
+	height:auto;
+}
+}
+@media (min-width:1001px) and (max-width:1500px)
+{
+.logo-image{
+	position: relative;
+	width:80%;
+	height:auto;
+}
+}
+@media (min-width:1500px)
+{
+.logo-image{
+	position: relative;
+	width:60%;
+	height:auto;
+}
+}
+
 .logo a
 {
 	font-family: 'Montserrat', sans-serif;
@@ -340,18 +383,7 @@ section
 	color: #171717;
 	text-transform: uppercase;
 }
-.logo span:first-of-type
-{
-	position: absolute;
-	top: 0;
-	left: -5px;
-	color: #ff4200;
-	z-index: -1;
-}
-.logo span:last-of-type
-{
-	color: #ff4200;
-}
+
 
 /*********************************
 3.2 Main Navigation
