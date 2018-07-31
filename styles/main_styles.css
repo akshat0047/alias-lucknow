@@ -403,6 +403,7 @@ section
 }
 .nav_items li
 {
+	transition: all 0.3s;
 	display: inline-block;
 	margin-left: 35px;
 	height: 100%;
@@ -573,7 +574,7 @@ section
 }
 .fs_menu_container.active
 {
-	top: 0;
+	top: 20px;
 }
 .fs_menu_list
 {
